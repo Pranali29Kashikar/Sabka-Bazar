@@ -1,0 +1,22 @@
+{
+  "name": "sabka-bazar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pranali29Kashikar/Sabka-Bazar.git"
+  },
+  "author": "Pranali Kashikar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pranali29Kashikar/Sabka-Bazar/issues"
+  },
+  "homepage": "https://github.com/Pranali29Kashikar/Sabka-Bazar#readme",
+  "devDependencies": {
+    "webpack": "^4.29.6"
+  }
+}
