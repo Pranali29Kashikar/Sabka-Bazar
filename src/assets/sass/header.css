@@ -2,28 +2,12 @@
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
-html,
-body {
-    font-family: 'Dosis';
-    font-weight: 600;
-    font-size: 20px;
-}
-
 .row {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     max-width: 1140px;
 }
-
-svg {
-    fill: #C71585;
-}
-
-p {
-    margin: 0;
-}
-
 span {
     display: flex;
     background-color: #DCDCDC;
