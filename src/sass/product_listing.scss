@@ -1,0 +1,54 @@
+@import "breakpoint.scss";
+
+.navigation {
+width: 300px;
+background-color: #eaeaea;
+max-width: 300px;
+width: 100%;
+}
+
+.mainmenu {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.mainmenu a {
+display: block;
+background-color: #CCC;
+text-decoration: none;
+padding: 10px;
+color: #000;
+}
+
+.mainmenu a:hover {
+  background-color: #C5C5C5;
+}
+
+.mainmenu li:hover {
+display: block;
+max-height: 200px;
+}
+
+
+.navigation >ul{
+  display: block;
+}
+
+.navigation > ul li{
+  display: block;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.navigation li a{
+  color: #747474;
+  padding: 13px 0 13px 25px;
+  font-weight: 400;
+}
+
+.navigation li a:hover{
+  color: #000;
+}
+.navigation input , .navigation label{
+  display: none;
+}

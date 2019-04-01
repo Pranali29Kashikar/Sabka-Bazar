@@ -1,14 +1,16 @@
-* {
+@import "breakpoint.scss";
+
+ * {
     box-sizing: border-box
 }
-
+html
 body {
     font-family: 'Dosis';
     font-weight: 600;
     font-size: 20px;
     margin: 0;
 }
-.container{
+.container {
     max-width:1215px;
     padding:0 15px;
     margin:0 auto;
@@ -29,6 +31,7 @@ p {
     padding: 13px 17px;
     transition:.5s;
     font-size: 15px;
+    border: 0px;
 }
 .btn:active, .btn:hover,.btn:focus, .btn:active, .btn:hover, .btn:focus  {
     outline: 0;
@@ -45,3 +48,4 @@ p {
 .flex_box{
     display: flex;
 }
+

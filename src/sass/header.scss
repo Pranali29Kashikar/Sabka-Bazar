@@ -8,16 +8,20 @@
     margin: 0 auto;
     max-width: 1140px;
 }
-span {
+
+.row img{
+    width: auto;
+}
+.cart_item {
     display: flex;
     background-color: #DCDCDC;
     margin-left: 38%;
     padding: 10px;
 }
 
-section {
-    padding: 80px 0;
-}
+// section {
+//     padding: 80px 0;
+// }
 
 .home {
     padding-top: 50px;
@@ -66,6 +70,8 @@ footer {
     font-size: 10px;
 
   }
+
+  
 
 
 
