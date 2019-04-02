@@ -9,34 +9,34 @@
 </head>
 
 <body>
-    <embed type="text/html" src="header.html">
+    <header id="header"></header>
     <section class="slider">
 
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-                <img src="./assets/images/offers/offer1.jpg" style="width:100%">
+                <img src="./assets/images/offers/offer1.jpg" alt="slider offer1" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img src="./assets/images/offers/offer2.jpg" style="width:100%">
+                <img src="./assets/images/offers/offer2.jpg" alt="slider offer2" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img src="./assets/images/offers/offer3.jpg" style="width:100%">
+                <img src="./assets/images/offers/offer3.jpg" alt="slider offer3" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img src="./assets/images/offers/offer4.jpg" style="width:100%">
+                <img src="./assets/images/offers/offer4.jpg" alt="slider offer4" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img src="./assets/images/offers/offer5.jpg" style="width:100%">
+                <img src="./assets/images/offers/offer5.jpg" alt="slider offer5" style="width:100%">
             </div>
 
 
             <a class="prev" onclick="plusSlides(-1)">Prev</a>
-            <a class="next" onclick="plusSlides(1)">Next</a>
+            <a class="next" id="next" onclick="plusSlides(1)">Next</a>
 
         </div>
         <br>
@@ -55,7 +55,7 @@
             <div class="box">
                 <div class="cart_img">
                     <figure>
-                        <img src="./assets/images/fruits.png" alt=""/>
+                        <img src="./assets/images/fruits.png" alt=" Fruits image" />
                     </figure>
                 </div>
                 <div class="cart_desc">
@@ -72,13 +72,14 @@
 
                 <div class="cart_desc">
                     <h3>Bakery Cakes and Dairy</h3>
-                    <p>The best cupcakes, cookies, caakes, pies,cheesecakes, fresh bread,biscotti, muffins, bagels, fresh
+                    <p>The best cupcakes, cookies, caakes, pies,cheesecakes, fresh bread,biscotti, muffins, bagels,
+                        fresh
                         coffee, milk and more.</p>
                     <a href="#" class="btn">Explore bakery-cakes-dairy</a>
                 </div>
                 <div class="cart_img">
                     <figure>
-                        <img src="./assets/images/bakery.png" alt=""/>
+                        <img src="./assets/images/bakery.png" alt="Cake image" />
                     </figure>
                 </div>
             </div>
@@ -90,7 +91,7 @@
             <div class="box">
                 <div class="cart_img">
                     <figure>
-                        <img src="./assets/images/beverages.png" alt=""/>
+                        <img src="./assets/images/beverages.png" alt="Beverages image" />
                     </figure>
                 </div>
                 <div class="cart_desc">
@@ -113,7 +114,7 @@
                 </div>
                 <div class="cart_img">
                     <figure>
-                        <img src="./assets/images/beauty.png" alt=""/>
+                        <img src="./assets/images/beauty.png" alt="Beauty image" />
                     </figure>
                 </div>
             </div>
@@ -125,7 +126,7 @@
             <div class="box">
                 <div class="cart_img">
                     <figure>
-                        <img src="./assets/images/baby.png" alt=""/>
+                        <img src="./assets/images/baby.png" alt="Baby care image" />
                     </figure>
                 </div>
                 <div class="cart_desc">
@@ -138,38 +139,45 @@
 
     </section>
 
-    <embed type="text/html" src="footer.html">
+    <footer id="footer">
+        </header>
 
 
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
             }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
-    <script src="../resources/js/bundle.js"></script>
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+            var next = document.getElementById("next");
+            setInterval(() => {
+                next.click();
+            }, 4000);
+        </script>
+        <script src="../resources/js/bundle.js"></script>
+        <script src="../src/js/index.js"></script>
 </body>
 
 </html>
